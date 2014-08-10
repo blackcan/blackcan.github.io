@@ -1,0 +1,235 @@
+body {
+  margin-top:0px;
+  margin-bottom:0px;
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbo {
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #C2C2C2;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 20px 15px;
+  margin-top:0px;
+  background-color: #FFFFFF;
+}
+
+.footer {
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border-top: 1px solid #C2C2C2;
+}
+
+.header {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-bottom: 1px solid #C2C2C2;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+ul.list-x > li {
+  display: inline-block;
+}
+
+ul.list-x {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; 
+  -webkit-padding-start: 0px;
+  list-style-type: none;
+}
+
+h1 {
+  color: #2E2E2E; 
+  -webkit-margin-before: 0.0em;
+  -webkit-margin-after: 0.0em;
+  font-family: 'Teko', sans-serif;
+}
+
+h2 {
+  color: #2E2E2E; 
+  -webkit-margin-before: 0.0em;
+  -webkit-margin-after: 0.0em;
+  font-family: 'Economica', sans-serif;
+}
+
+h2 small {
+  margin-left: 10px;
+  font-size: 0.7em;
+  color: #666;
+}
+
+header {
+  margin: 10px 0px;
+}
+
+header > h1 {
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.jumbo h1 {
+  font-size: 7em;
+  text-shadow: 0px 1px 1px #fff;
+  line-height: 0.5em;
+}
+
+.jumbo h2 {
+  margin-top: 0px;
+  font-size: 3em;
+  color: #676767;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+img.img-circle{
+  float: left;
+  margin-right: 25px;
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%; 
+  border-radius: 50%;
+}
+
+a:link,
+a:visited
+{
+    color: #FF0046;
+    text-decoration: none;
+}
+a:hover,
+a:active
+{
+    color: #B80032;
+    text-decoration: none;
+}
+
+.icon a:link,
+.icon a:visited
+{
+    color: #444;
+    text-decoration: none;
+}
+.icon a:hover,
+.icon a:active
+{
+    color: #ff0046;
+    text-decoration: none;
+}
+
+blockquote{
+  display:block;
+  background: #f2f2f2;
+  padding: 15px 20px 15px 30px;
+  margin: 5px 0px 20px;
+  position: relative;
+}
+
+blockquote:before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+img.blackcanpic {
+  -webkit-box-shadow: 0px 1px 3px #fff;
+  -moz-box-shadow: 0px 1px 3px #fff;
+  box-shadow: 0px 1px 3px #fff;
+}
+@media screen and (min-width: 980px) {
+  body {
+    background-image: url('../img/texturetastic_gray.png');
+    background-repeat: repeat;
+  }
+  .container {
+    width: 960px;
+    margin: 20px auto;
+  }
+  .jumbo {
+    padding: 25px 120px 25px 120px;
+    height: 250px; 
+  }
+
+  .jumbo h1 {
+    margin-top: 50px;
+  }
+
+  .section {
+    margin: 30px 0px;
+  }
+
+  .row {
+    margin: 15px 0px;
+  }
+
+  .left-col {
+    float: left;
+  }
+
+  .right-col {
+    margin-left: 250px;
+    border-left: 3px solid #FF0046;
+    padding-left: 5px;
+  }
+
+  .icon-list {
+    width: 290px;
+    margin-left: auto;
+    margin-right: 0px;
+  }
+
+  .icon {
+    margin: 10px 5px;
+    font-size: 1.0em;
+  }
+
+  img.blackcanpic {
+    width: 200px;
+    height: 200px;
+    border-width: 5px;
+  }
+
+  .container.shadow
+  {
+      position:relative;       
+      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+              box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  }
+  .container.shadow:before, .container.shadow:after
+  {
+    content:"";
+      position:absolute; 
+      z-index:-1;
+      -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+      -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+      box-shadow:0 0 20px rgba(0,0,0,0.8);
+      top:50%;
+      bottom:0;
+      left:10px;
+      right:10px;
+      -moz-border-radius:100px / 10px;
+      border-radius:100px / 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-device-width: 480px) {
+}
